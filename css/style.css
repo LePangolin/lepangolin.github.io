@@ -1,0 +1,220 @@
+/* body{
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
+} */
+
+.conatiner{
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
+}
+
+.row{
+    display : flex;
+    flex-direction : row;
+    justify-content : center;
+}
+
+.titre{
+    /* center titre on page */
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
+}
+
+.res{
+    /* align left */
+    display : inline-block;
+}
+
+
+
+/* make radio input like button */
+input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    position: relative;
+    background-color: #eee;
+    top: 0;
+    left: 0;
+    height: 50vh;
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 16px;
+    transition-duration: 0.4s;
+    border: 1px solid #444;
+}
+
+input[type="radio"]:checked {
+    border: 2px red solid;
+    color: #eee;
+}
+
+/* make text in input radio */
+input[type="radio"]:before {
+    content: attr( data-diff);
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    color: #444;
+    transition-duration: 0.2s;
+    transform: scale(1.0);
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* class to newline input */
+.newline {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* class for margin top */
+.mt-0 {
+    margin-top: 0%;
+}
+
+.mt-1 {
+    margin-top: 10%;
+}
+
+.mt-2 {
+    margin-top: 20%;
+}
+
+.mt-3 {
+    margin-top: 30%;
+}
+
+.mt-4 {
+    margin-top: 40%;
+}
+
+.mt-5 {
+    margin-top: 50%;
+}
+
+.mt-6 {
+    margin-top: 60%;
+}
+
+.mt-7 {
+    margin-top: 70%;
+}
+
+.mt-8 {
+    margin-top: 80%;
+}
+
+.mt-9 {
+    margin-top: 90%;
+}
+
+.mt-10 {
+    margin-top: 100%;
+}
+
+
+
+
+
+/* col class for 12 size */
+
+.col-1{
+    width : 8.33%;
+}
+
+.col-2{
+    width : 16.66%;
+}
+
+.col-3{
+    width : 25%;
+}
+
+.col-4{
+    width : 33.33%;
+}
+
+.col-5{
+    width : 41.66%;
+}
+
+.col-6{
+    width : 50%;
+}
+
+.col-7{
+    width : 58.33%;
+}
+
+.col-8{
+    width : 66.66%;
+}
+
+.col-9{
+    width : 75%;
+}
+
+.col-10{
+    width : 83.33%;
+}
+
+.col-11{
+    width : 91.66%;
+}
+
+.col-12{
+    width : 100%;
+}
+
+.justify-left{
+    justify-content : flex-start;
+}
+
+
+
+
+.hidden{
+    display : none;
+}
+
+#highscore{
+    overflow-y: scroll;
+}
+
+/* limit the body height at windows screen */
+body{
+    max-height : 100vh;
+}
+
+.t0{
+    top : 0;
+}
+
+.res{
+    
+}
+
+.disco{
+    position: absolute;
+    top: 0;
+}

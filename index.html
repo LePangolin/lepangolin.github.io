@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Jeu du Plus ou Moins </title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <h1 class="titre"> 📈 Jeu du Plus ou Moins 📉 </h1>
+        <h4 class="titre"> Devinez le nombre entre 1 et 100 </h4>
+        <div class="container">
+            <div id="difficulte" class="difficulter">
+                <div class="row">
+                    <div class="col-4 diff">
+                        <input type="radio" id="facile" name="difficulte" value="1" checked data-diff="Facile : vous aurez 15 essais ">
+                    </div>
+                    <div class="col-4 diff">
+                        <div class="diffInput">
+                            <input type="radio" id="moyen" name="difficulte" value="2" data-diff="Moyen : Vous aurez 10 essais">
+                        </div>
+                    </div>
+                    <div class="col-4 diff">
+                        <input type="radio" id="difficile" name="difficulte" value="3" data-diff="Difficile : Vous aurez 5 essais">
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-12">
+                        <button id="validateDifficulty" class="col-12">Commencer</button>
+                    </div>
+                </div>
+            </div>
+            <div id="jeu" class="jeu hidden">
+                <div class="row">
+                    <div class="center">
+                        <p> Vous avez <span id="essais"></span> essais <br></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <label for="number">Entrez votre guess : &nbsp;</label><input name="number" type="number" id="nombre" min="1" max="100">
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="center">
+                            <button id="buttonGame" class="col-2"> Valider </button>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="center">
+                            <h3> Historique de la partie</h3>
+                        </div>
+                        <div id="result" class="mt-0 t0">
+
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="center">
+                                <h3> HighScores </h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <button id="Empty"> Vider les highScores</button>
+                            </div>
+                            <div class="col-4">
+                                <button id="show"> Afficher les highScores</button>
+                            </div>
+                            <div class="col-4">
+                                <input class="col-3" type="text" id="nomHighScore"><button id="search">Rechercher</button>
+                            </div>
+                        </div>
+                        <div id="highScores">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="dinausore"class="dinausore hidden" style="width: 25%; height:25%;">
+            <div class="tenor-gif-embed" data-postid="16466568" data-share-method="host" data-aspect-ratio="1.02894" data-width="100%"><a href="https://tenor.com/view/dinosaur-dancing-dino-gif-16466568">Dinosaur Dancing Dino Sticker</a>from <a href="https://tenor.com/search/dinosaur-stickers">Dinosaur Stickers</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+        </div>
+        <div id="disco" class="disco hidden">
+            <div class="center">
+                <img src="https://media.discordapp.net/attachments/923703196885594114/1032569568075456532/www.animated-gifs.eu-7268337.gif">
+            </div>
+        </div>
+        <script src="ExoPlusMoins.js"></script>
+    </body>
+</html>
